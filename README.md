@@ -6,6 +6,8 @@ Cookbook to provision a couchbase cluster
 Prerequisites:
 + chefdk
 + `cd [path to directory containing this README.md]`
+
+Usage:
 1. To create nodes `chef-client -z recipes/default.rb`
 2. To destroy nodes `chef-client -z recipes/destroy_all.rb`
 
