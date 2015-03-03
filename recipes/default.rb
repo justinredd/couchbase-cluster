@@ -20,3 +20,8 @@ machine 'foo' do
   tag 'foo-tag'
   converge true
 end
+
+machine 'bar' do
+  tag 'bar-tag'
+  converge true
+end
