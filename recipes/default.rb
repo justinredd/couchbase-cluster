@@ -16,12 +16,9 @@ with_machine_options vagrant_options: {
   'vm.box' => 'opscode-centos-6.5'
 }
 
-machine 'foo' do
-  tag 'foo-tag'
-  converge true
-end
-
-machine 'bar' do
-  tag 'bar-tag'
-  converge true
+%w(foo bar).each do |node_name|
+  machine node_name do
+    tag "#{node_name}-tag"
+    converge true
+  end
 end
